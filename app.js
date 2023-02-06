@@ -24,6 +24,7 @@ const cardsAdj =[
     name: 'Mercedes'
     img: 'imagenes/mercedes.jpg'
   },
+  
 
 ]
 });
