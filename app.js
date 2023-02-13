@@ -49,4 +49,21 @@ document.addEventListener("DOMContentLoaded", () => {
       img: "imagenes/mercedes.jpg"
     }
   ];
+  const cuadricula = document.querySelector(".cuadricula");
+  const resultado = document.querySelector("#resultado");
+  var CartasEscogidas = [];
+  var CartasEscogidasId = [];
+  var CartasGanadas = [];
+
+  function crearTablero() {
+    for (let i = 0; i < cardAdj.length; i++) {
+      var carta = document.createe8("img");
+      carta.setAttribute("src", "imagenes/reverso.png");
+
+      carta.setAttribute("data-id", i);
+      carta.addEventListener("click", VoltearCarta);
+
+      cuadricula.appendChild(carta);
+    }
+  }
 });
