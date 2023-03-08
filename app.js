@@ -66,4 +66,14 @@ document.addEventListener("DOMContentLoaded", () => {
       cuadricula.appendChild(carta);
     }
   }
+  function VoltearCarta() {
+    var CardId = this.getAtribute("data-id");
+    CartasEscogidas.push(cardAdj[CardId].name);
+    CartasEscogidas.push(CardId);
+    this.setAttribute("src", cardAdj[CardId].img);
+    if (CartasEscogidas.length === 2) {
+      setTimeout(VerificarPareja, 1000);
+    }
+  }
+  crearTablero();
 });
